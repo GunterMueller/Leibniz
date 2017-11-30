@@ -1,0 +1,95 @@
+NOMAD_VERSION = 3.6.2
+
+all:	install.nomad install.leibniz
+
+install.nomad:	
+	cd Nomad; unzip NOMAD.zip
+	cd Nomad; mv nomad.$(NOMAD_VERSION) NOMAD
+	cd Nomad/NOMAD/install; ./install.sh
+
+install.leibniz:
+		
+	cd GlobalVersion; unzip -o globalversion.zip
+	cd GlobalVersion; $(MAKE) -f makefile.install
+	cd Lbcc/Code; unzip -o lbcc.code.zip
+	cd Lbcc/Code; $(MAKE) -f makefile.install
+	cd Lbcc/Doc; unzip -o lbcc.doc.zip
+	cd Lbcc/Doc; $(MAKE) -f makefile.install
+	cd Lbcc/Makedata; unzip -o lbcc.makedata.zip
+	cd Lbcc/Makedata; $(MAKE) -f makefile.install
+	cd Qallsatcc/Code; unzip -o qallsatcc.code.zip
+	cd Qallsatcc/Code; $(MAKE) -f makefile.install
+	cd Qallsatcc/Doc; unzip -o qallsatcc.doc.zip
+	cd Qallsatcc/Doc; $(MAKE) -f makefile.install
+	cd Qallsatcc/Makedata; unzip -o qallsatcc.makedata.zip
+	cd Qallsatcc/Makedata; $(MAKE) -f makefile.install
+	cd Manual; unzip -o manual.zip
+	cd Manual; $(MAKE) -f makefile.install
+	cd Expertsys/Formulation; unzip expertsys.formulation.zip
+	cd Expertsys/Formulation; $(MAKE) -f makefile.install
+	cd Decc/Code; unzip -o decc.code.zip
+	cd Decc/Code; $(MAKE) -f makefile.install
+	cd Decc/Doc; unzip -o decc.doc.zip
+	cd Decc/Doc; $(MAKE) -f makefile.install
+	cd Decc/Makedata; unzip -o decc.makedata.zip
+	cd Decc/Makedata; $(MAKE) -f makefile.install
+	cd Cutcc/Code; unzip -o cutcc.code.zip
+	cd Cutcc/Code; $(MAKE) -f makefile.install
+	cd Cutcc/Doc; unzip -o cutcc.doc.zip
+	cd Cutcc/Doc; $(MAKE) -f makefile.install
+	cd Cutcc/Makedata; unzip -o cutcc.makedata.zip
+	cd Cutcc/Makedata; $(MAKE) -f makefile.install
+	cd Lsqcc/Code; unzip -o lsqcc.code.zip
+	cd Lsqcc/Code; $(MAKE) -f makefile.install
+	cd Lsqcc/Doc; unzip -o lsqcc.doc.zip
+	cd Lsqcc/Doc; $(MAKE) -f makefile.install
+	cd Lsqcc/Makedata; unzip -o lsqcc.makedata.zip
+	cd Lsqcc/Makedata; $(MAKE) -f makefile.install
+	cd Prpcc/Code; unzip -o prpcc.code.zip
+	cd Prpcc/Code; $(MAKE) -f makefile.install
+	cd Prpcc/Doc; unzip -o prpcc.doc.zip
+	cd Prpcc/Doc; $(MAKE) -f makefile.install
+	cd Prpcc/Makedata; unzip -o prpcc.makedata.zip
+	cd Prpcc/Makedata; $(MAKE) -f makefile.install
+	cd Subcc/Code; unzip -o subcc.code.zip
+	cd Subcc/Code; $(MAKE) -f makefile.install
+	cd Subcc/Doc; unzip -o subcc.doc.zip
+	cd Subcc/Doc; $(MAKE) -f makefile.install
+	cd Subcc/Makedata; unzip -o subcc.makedata.zip
+	cd Subcc/Makedata; $(MAKE) -f makefile.install
+	cd Sub2cc/Code; unzip -o sub2cc.code.zip
+	cd Sub2cc/Code; $(MAKE) -f makefile.install
+	cd Sub2cc/Doc; unzip -o sub2cc.doc.zip
+	cd Sub2cc/Doc; $(MAKE) -f makefile.install
+	cd Sub2cc/Makedata; unzip -o sub2cc.makedata.zip
+	cd Sub2cc/Makedata; $(MAKE) -f makefile.install
+	cd Suballcc/Code; unzip -o suballcc.code.zip
+	cd Suballcc/Code; $(MAKE) -f makefile.install
+	cd Suballcc/Doc; unzip -o suballcc.doc.zip
+	cd Suballcc/Doc; $(MAKE) -f makefile.install
+	cd Suballcc/Makedata; unzip -o suballcc.makedata.zip
+	cd Suballcc/Makedata; $(MAKE) -f makefile.install
+	cd Matchcc/Code; unzip -o matchcc.code.zip
+	cd Matchcc/Code; $(MAKE) -f makefile.install
+	cd Matchcc/Doc; unzip -o matchcc.doc.zip
+	cd Matchcc/Doc; $(MAKE) -f makefile.install
+	cd Matchcc/Makedata; unzip -o matchcc.makedata.zip
+	cd Matchcc/Makedata; $(MAKE) -f makefile.install
+	cd Redcc/Code; unzip -o redcc.code.zip
+	cd Redcc/Code; $(MAKE) -f makefile.install
+	cd Redcc/Doc; unzip -o redcc.doc.zip
+	cd Redcc/Doc; $(MAKE) -f makefile.install
+	cd Redcc/Makedata; unzip -o redcc.makedata.zip
+	cd Redcc/Makedata; $(MAKE) -f makefile.install
+	cd Multicc/Code; unzip -o multicc.code.zip
+	cd Multicc/Code; $(MAKE) -f makefile.install
+	cd Multicc/Doc; unzip -o multicc.doc.zip
+	cd Multicc/Doc; $(MAKE) -f makefile.install
+	cd Multicc/Makedata; unzip -o multicc.makedata.zip
+	cd Multicc/Makedata; $(MAKE) -f makefile.install
+	cd Utility/Code; unzip -o utility.code.zip
+	cd Utility/Code; $(MAKE) -f makefile.install
+	cd Utility/Doc; unzip -o utility.doc.zip
+	cd Utility/Doc; $(MAKE) -f makefile.install
+	cd Utility/Makedata; unzip -o utility.makedata.zip
+	cd Utility/Makedata; $(MAKE) -f makefile.install
